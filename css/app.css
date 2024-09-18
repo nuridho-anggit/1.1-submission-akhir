@@ -4,6 +4,8 @@
     padding: 0;
 
     background-color: #24252a;
+
+    
 }
 
 body{
@@ -15,7 +17,11 @@ header.navbar-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 10%;
+    padding: 25px 5%;
+
+    position: sticky;
+
+    background-color: transparent;
 
     /* bordesr: 2px solid black; */
 }
@@ -25,6 +31,7 @@ header.navbar-container li a {
     font-size: 16px;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    
 
 }
 header.navbar-container .logo {
@@ -51,6 +58,64 @@ nav.nav-list li {
 nav.nav-list li a:hover{
     color:#fd354a;
     font-weight: 600;
+}
+
+.jumbotron {
+    font-size: 20px;
+    width: 100%;
+    padding: 60px 60px 120px 60px ;
+    /* background-color: #00c8eb; */
+    text-align: center;
+    color: white;
+}
+
+
+main {
+    padding: 25px 3%;
+    
+    color: white;
+    text-align: justify;
+}
+.content{
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content-article {
+    flex: 5;
+    display: flex;
+
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+
+   border: white 2px solid;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+}
+
+aside {
+    padding: 10px 25px;
+    flex: 1;
+    width: 25%;
+    /* padding-left: 25px; */
+    border: white 2px solid;
+    text-align: justify;
+}
+
+footer {
+    padding: 30px;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    
+}
+article>section {
+    padding-left: 35px;
 }
 
 /* *,
