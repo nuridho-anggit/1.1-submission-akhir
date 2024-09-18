@@ -5,38 +5,40 @@
 
     background-color: #24252a;
 
-    
+
 }
 
-body{
+body {
     font-family: 'Quicksand', sans-serif;
 }
 
-header.navbar-container{
-
+header.navbar-container {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 5%;
 
-    position: sticky;
+    
 
-    background-color: transparent;
+    background-color: #24252a;
 
     /* bordesr: 2px solid black; */
 }
 
 header.navbar-container li a {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 24px;
     color: rgb(255, 255, 255);
     text-decoration: none;
-    
+
 
 }
+
 header.navbar-container .logo {
     cursor: pointer;
-    width: 20%;
+    width: 15%;
     /* height: 100px; */
 }
 
@@ -55,30 +57,77 @@ nav.nav-list li {
     transition: all 0.3s ease 0s;
 }
 
-nav.nav-list li a:hover{
-    color:#fd354a;
+nav.nav-list li a:hover {
+    color: #fd354a;
     font-weight: 600;
+}
+
+main {
+    padding: 25px 3%;
+
+    color: white;
+
 }
 
 .jumbotron {
     font-size: 20px;
     width: 100%;
-    padding: 60px 60px 120px 60px ;
+    padding: 60px 60px 120px 60px;
+    height: 1000px;
     /* background-color: #00c8eb; */
-    text-align: center;
+
     color: white;
+
+    max-width: 1200px;
+    display: flex;
+    margin-inline: auto;
+    /* padding: 2rem 4rem; */
+
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron-content {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron-content .content-description {
+    flex: 1 1;
+    /* text-align: center; */
+}
+
+.jumbotron-content .content-description .title {
+    margin-block: 1rem;
+    text-align: right;
+    font-size: 3.5rem;
+}
+
+.jumbotron-content .content-description p {
+    text-indent: 3px;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+.jumbotron-content .content-image {
+    flex: 1;
+
+    display: flex;
+}
+
+.jumbotron-content .content-image img {
+    width: 300px;
+    min-width: 250px;
+    margin: auto;
 }
 
 
-main {
-    padding: 25px 3%;
-    
-    color: white;
-    text-align: justify;
-}
-.content{
+.content {
     display: flex;
     gap: 1.5rem;
+    text-align: justify;
 }
 
 #content-article {
@@ -88,14 +137,14 @@ main {
     flex-flow: column nowrap;
     gap: 1rem 2rem;
 
-   border: white 2px solid;
+    border: white 5px solid;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 
-    padding: 20px;
+    padding: 50px 20px;
 }
 
 aside {
@@ -103,8 +152,12 @@ aside {
     flex: 1;
     width: 25%;
     /* padding-left: 25px; */
-    border: white 2px solid;
+    /* border: white 2px solid; */
     text-align: justify;
+}
+
+aside > .card{
+    box-shadow:0 4px 8px 0 rgba(255, 254, 254, 0.2) ;
 }
 
 footer {
@@ -112,9 +165,78 @@ footer {
     color: white;
     background-color: transparent;
     text-align: center;
-    
+
 }
+
 article>section {
     padding-left: 35px;
     padding-top: 10px;
+}
+
+
+.profile header {
+    text-align: center;
+}
+
+.profile section {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.featured-images {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    
+    padding: 10px;
+}
+
+.content-article h1,h2{
+    text-align: center;
+}
+
+.card p{
+    text-indent: 20px;
+
+}
+
+.card h2{
+    padding: 0 0 50px 0;
+    font-size: 42px;
+}
+
+.card h3{
+    text-align: center;
+    font-size: 24px;
 }

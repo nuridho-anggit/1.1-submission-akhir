@@ -13,13 +13,20 @@
 
 <body>
     <header class="navbar-container">
-        <img class="logo" src="assets/img/navbar-logo-copy.png" alt="sandbox logo">
+        <img class="logo" src="assets/img/zzz-logo.png" alt="sandbox logo">
         <nav class="nav-list">
             <ul>
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Apa yang baru</a></li>
-                <li><a href="#">Kontak</a></li>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#gameplay">Gameplay</a></li>
+                <!-- <li><a href="#">Keunikan</a></li> -->
+                 <li class="dropdown">
+                    <a href="#keunikan" class="dropbtn">Keunikan</a>
+                    <div class="dropdown-content">
+                        <a href="#karakter">Karakter</a>
+                        <a href="#lingkungan">Lingkungan</a>
+                    </div>
+                 </li>
             </ul>
         </nav>
 
@@ -28,70 +35,85 @@
 
     <main>
 
-        <div class="jumbotron">
-            <h1>Bandung</h1>
-            <p>
-                Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.
-            </p>
+        <div class="jumbotron" id="beranda">
+            <div class="jumbotron-content">
+                <div class="content-decription">
+                    <h1 class="title">
+                        Zenless Zone Zero
+                    </h1>
+                    <p>
+                        Sebuah game action RPG futuristik dari HoYoverse, yang membawa pemain ke kota misterius New
+                        Eridu yang
+                        terancam oleh dimensi Hollow. Dalam game ini, pemain berperan sebagai "Proxy" yang dapat
+                        memanggil karakter unik dengan kemampuan berbeda untuk melawan monster. Dengan grafis yang
+                        memukau dan sistem pertarungan real-time, Zenless Zone Zero menawarkan pengalaman bermain yang
+                        mendalam dan seru!
+                    </p>
+                </div>
+
+                <div class="content-image">
+                    <img src="assets/img/zzz-logo-v2-edited.png" alt="Dicoding logo">
+                </div>
+            </div>
         </div>
 
         <div class="content">
             <div id="content-article">
 
-                <article id="article" class="card">
-                    <h2>Article 1</h2>
-                    <!-- <img src="assets/image/history.jpg" alt="sejarah" class="featured-images" /> -->
+                <article id="sejarah" class="card">
+                    <h2>Sejarah</h2>
+                    <img src="assets/img/sejarah.jpeg" alt="sejarah" class="featured-images" />
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga neque eius itaque recusandae
-                        repellat tenetur commodi. Molestiae quasi laboriosam dignissimos neque! Illo, iure quisquam.
-                        Quibusdam eveniet minima quaerat earum accusamus?
+                        Zenless Zone Zero pertama kali diumumkan pada tahun 2021, mencuri perhatian banyak gamer dengan
+                        desain grafis yang memukau dan alur cerita yang menarik. Game ini merupakan proyek terbaru dari
+                        HoYoverse, yang sebelumnya sukses dengan Genshin Impact dan Honkai Impact.
+                    </p>
+                    <br>
+                    <p>
+                        Dalam perjalanan pengembangannya, game ini telah mengalami beberapa fase beta, mendapatkan
+                        masukan dari pemain untuk meningkatkan pengalaman bermain. Zenless Zone Zero menawarkan dunia
+                        yang penuh misteri, mengajak pemain menjelajahi berbagai lokasi dan karakter unik.
+                    </p>
+                </article>
+                <article id="gameplay" class="card">
+                    <h2>Gameplay dan Mekanik</h2>
+                    <img src="assets/img/gameplay-gif.gif" alt="geografis" class="featured-images" />
+                    <p>
+                        Zenless Zone Zero menggabungkan elemen pertarungan real-time dengan sistem gacha yang
+                        memungkinkan pemain mengumpulkan berbagai karakter. Setiap karakter memiliki kemampuan dan latar
+                        belakang yang berbeda, memberikan variasi dalam strategi pertarungan.
                     </p>
 
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio aperiam ipsam, vitae
-                        cupiditate ducimus debitis corrupti officia dolorum accusamus necessitatibus, veniam aut eum
-                        iste soluta dignissimos obcaecati, reprehenderit quod eius?
+                        Pemain juga akan dihadapkan pada misi beragam dan dungeon yang menantang, memerlukan
+                        keterampilan dan taktik untuk menyelesaikannya. Dengan berbagai mode permainan, Zenless Zone
+                        Zero menawarkan pengalaman yang dinamis dan menyenangkan.
                     </p>
                 </article>
-                <article id="article" class="card">
-                    <h2>Article 2</h2>
-                    <!-- <img src="assets/image/geografis.jpg" alt="geografis" class="featured-images" /> -->
+                <article id="Keunikan" class="card">
+                    <h2>Keunikan</h2>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea atque numquam reprehenderit nemo a,
-                        nulla cumque ex amet molestiae velit aut, tempore consequuntur at ipsum enim debitis nobis quo
-                        facere.
+                        Dunia New Eridu dipenuhi dengan karakter-karakter unik yang memiliki latar belakang menarik dan
+                        hubungan yang dalam. Pemain dapat memilih karakter sesuai dengan gaya bermain masing-masing,
+                        menciptakan tim yang seimbang untuk menghadapi tantangan.
                     </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis vel commodi fugiat labore
-                        voluptatum, assumenda, nobis aspernatur earum cupiditate voluptatibus odio dignissimos, adipisci
-                        autem vitae quis omnis! Aliquid, unde provident.
-                    </p>
-                </article>
-                <article id="article" class="card">
-                    <h2>Article 3</h2>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, nisi ad quas alias, voluptate
-                        ipsam aspernatur sed eaque unde aperiam et quidem eius distinctio totam enim optio fugiat
-                        tempore veniam!
-                    </p>
-                    <section>
-                        <h3>sub article</h3>
-                        <!-- <img src="assets/image/farm-house.jpg" alt="farm house" class="featured-images" /> -->
+                    <section id="karakter">
+                        <h3>Karakter Utama</h3>
+                        <img src="assets/img/karakter utama.png" alt="Karakter Utama" class="featured-images" />
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nisi porro ducimus
-                            possimus architecto. Id iste unde, ipsa totam dolore ullam repudiandae fugit fugiat
-                            consectetur cumque. Iure, dicta facilis?
+                            Setiap karakter dalam Zenless Zone Zero memiliki kisah dan motivasi yang mendalam, membuat
+                            pemain lebih terhubung dengan mereka. Pengembangan karakter ini menjadi salah satu daya
+                            tarik utama dalam game ini.
                         </p>
                     </section>
 
-                    <section>
-                        <h3>sub article</h3>
-                        <!-- <img src="assets/image/bosscha.jpg" alt="bosscha" class="featured-images" /> -->
+                    <section id="lingkungan">
+                        <h3>Lingkungan Desain</h3>
+                        <img src="assets/img/lingkungan.jpeg" alt="Envoirenment" class="featured-images" />
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore totam excepturi ea eius,
-                            laboriosam eaque omnis tenetur beatae qui incidunt repellendus reiciendis earum, numquam
-                            alias. Consequuntur excepturi hic eum laboriosam?
+                            Desain visual New Eridu yang futuristik dan artistik menciptakan atmosfer yang menarik.
+                            Pemain akan menikmati berbagai lokasi yang kaya detail dan penuh misteri, menjadikan
+                            eksplorasi sangat menyenangkan.
                         </p>
                     </section>
                 </article>
@@ -101,13 +123,49 @@
 
 
             <aside>
-                <h1>
-                    Lorem ipsum dolor sit amet.
-                </h1>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quod minima hic sapiente, obcaecati
-                    magni velit consectetur animi vitae iste.
-                </p>
+                <article class="profile card">
+                    <Header>
+                        <article>
+                            <h2>
+                                Zenless Zone Zero
+                            </h2>
+                            <p>
+                                Game Action RPG besutan Mihoyo
+                            </p>
+                            <figure>
+                                <img src="assets/img/zzz-logo-v2-edited.png" alt="">
+                                <figcaption>
+                                    Anjaymabar
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </Header>
+
+                    <section>
+                        <table>
+                            <tr>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>
             </aside>
         </div>
 
