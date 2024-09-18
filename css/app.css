@@ -20,7 +20,7 @@ header.navbar-container {
     align-items: center;
     padding: 25px 5%;
 
-    
+
 
     background-color: #24252a;
 
@@ -73,7 +73,7 @@ main {
     font-size: 20px;
     width: 100%;
     padding: 60px 60px 120px 60px;
-    height: 1000px;
+    height: 80%;
     /* background-color: #00c8eb; */
 
     color: white;
@@ -149,15 +149,15 @@ main {
 
 aside {
     padding: 10px 25px;
-    flex: 1;
+    flex: 1.5;
     width: 25%;
     /* padding-left: 25px; */
     /* border: white 2px solid; */
     text-align: justify;
 }
 
-aside > .card{
-    box-shadow:0 4px 8px 0 rgba(255, 254, 254, 0.2) ;
+aside>.card {
+    box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.2);
 }
 
 footer {
@@ -218,25 +218,63 @@ li.dropdown {
     max-height: 500px;
     object-fit: cover;
     object-position: center;
-    
+
     padding: 10px;
 }
 
-.content-article h1,h2{
+.content-article h1,
+h2 {
     text-align: center;
 }
 
-.card p{
+.card p {
     text-indent: 20px;
 
 }
 
-.card h2{
+.card h2 {
     padding: 0 0 50px 0;
     font-size: 42px;
 }
 
-.card h3{
+.card h3 {
     text-align: center;
     font-size: 24px;
+}
+
+@media screen and (max-width:1200px) {
+    .content {
+        flex-flow: column nowrap;
+    }
+
+    .content aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    aside {
+        align-self: center;
+        align-items: stretch;
+        flex-flow: column nowrap;
+    }
+
+    header.navbar-container .logo {
+        cursor: pointer;
+        width: 15%;
+        /* height: 100px; */
+        display: none;
+        /* value:type */
+    }
+
+
+
+    .profile img {
+        width: 90%;
+    }
+
 }
