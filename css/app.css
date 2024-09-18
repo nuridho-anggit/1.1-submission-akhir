@@ -62,6 +62,8 @@ nav.nav-list li a:hover {
     font-weight: 600;
 }
 
+
+
 main {
     padding: 25px 3%;
 
@@ -154,11 +156,25 @@ aside {
     /* padding-left: 25px; */
     /* border: white 2px solid; */
     text-align: justify;
+
+    /* text-decoration: none; */
+    color: white;
 }
 
+aside section table{
+    text-align: left;
+}
+
+aside section table td>a{
+    text-decoration: none;
+    color: pink;
+
+}
 aside>.card {
     box-shadow: 0 4px 8px 0 rgba(255, 254, 254, 0.2);
 }
+
+
 
 footer {
     padding: 30px;
